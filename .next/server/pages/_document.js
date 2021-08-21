@@ -446,7 +446,7 @@ var _documentContext = __webpack_require__(163);
 
 var _utils = __webpack_require__(620);
 
-var _getPageFiles = __webpack_require__(372);
+var _getPageFiles = __webpack_require__(15);
 
 var _utils1 = __webpack_require__(208);
 
@@ -1090,7 +1090,7 @@ function getAmpPath(ampPath, asPath) {
 
 /***/ }),
 
-/***/ 372:
+/***/ 15:
 /***/ ((module) => {
 
 module.exports = require("next/dist/server/get-page-files.js");
