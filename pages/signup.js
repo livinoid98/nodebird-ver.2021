@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import AppLayout from '../components/AppLayout'
 import {Form, Input, Checkbox, Button} from 'antd'
 
 const Signup = () => {
@@ -45,7 +44,7 @@ const Signup = () => {
         setTerm(e.target.checked);
     };
     return (
-        <AppLayout>
+        <>
             <Form onSubmit={onSubmit} style={{padding: 10}}>
                 <div>
                     <label htmlFor="user-id">아이디</label>
@@ -76,7 +75,7 @@ const Signup = () => {
                     <Button type="primary">가입하기</Button>
                 </div>
             </Form>
-        </AppLayout>
+        </>
     )
 }
 
