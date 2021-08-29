@@ -34,52 +34,53 @@ var external_antd_ = __webpack_require__(953);
 
 
 
-
-
 const AppLayout = ({
   children
 }) => {
-  return /*#__PURE__*/(0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-    children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)((head_default()), {
-      children: [/*#__PURE__*/jsx_runtime_.jsx("title", {
-        children: "NodeBird"
-      }), /*#__PURE__*/jsx_runtime_.jsx("link", {
-        rel: "stylesheet",
-        href: "https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.css"
-      })]
-    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)(external_antd_.Menu, {
-        mode: "horizontal",
-        children: [/*#__PURE__*/jsx_runtime_.jsx(external_antd_.Menu.Item, {
-          children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-            href: "/",
-            children: /*#__PURE__*/jsx_runtime_.jsx("a", {
-              children: "\uB178\uB4DC\uBC84\uB4DC"
-            })
-          })
-        }, "home"), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Menu.Item, {
-          children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-            href: "/profile",
-            children: /*#__PURE__*/jsx_runtime_.jsx("a", {
-              children: "\uD504\uB85C\uD544"
-            })
-          })
-        }, "profile"), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Menu.Item, {
-          children: /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Input.Search, {
-            enterButton: true,
-            style: {
-              verticalAlign: 'middle'
-            }
-          })
-        }, "email")]
-      }), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Button, {
+  return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+    children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)(external_antd_.Menu, {
+      mode: "horizontal",
+      children: [/*#__PURE__*/jsx_runtime_.jsx(external_antd_.Menu.Item, {
         children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-          href: "/signup",
+          href: "/",
           children: /*#__PURE__*/jsx_runtime_.jsx("a", {
-            children: "\uD68C\uC6D0\uAC00\uC785"
+            children: "\uB178\uB4DC\uBC84\uB4DC"
           })
         })
-      }), children]
+      }, "home"), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Menu.Item, {
+        children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+          href: "/profile",
+          children: /*#__PURE__*/jsx_runtime_.jsx("a", {
+            children: "\uD504\uB85C\uD544"
+          })
+        })
+      }, "profile"), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Menu.Item, {
+        children: /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Input.Search, {
+          enterButton: true,
+          style: {
+            verticalAlign: 'middle'
+          }
+        })
+      }, "email")]
+    }), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Button, {
+      children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+        href: "/signup",
+        children: /*#__PURE__*/jsx_runtime_.jsx("a", {
+          children: "\uD68C\uC6D0\uAC00\uC785"
+        })
+      })
+    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_antd_.Row, {
+      children: [/*#__PURE__*/jsx_runtime_.jsx(external_antd_.Col, {
+        xs: 24,
+        md: 6
+      }), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Col, {
+        xs: 24,
+        md: 12,
+        children: children
+      }), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Col, {
+        xs: 24,
+        md: 6
+      })]
     })]
   });
 };
