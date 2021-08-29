@@ -33,6 +33,12 @@ var external_antd_ = __webpack_require__(953);
 
 
 
+const dummy = {
+  nickname: 'livinoid98',
+  Post: [],
+  Followings: [],
+  Followers: []
+};
 
 const AppLayout = ({
   children
@@ -70,9 +76,31 @@ const AppLayout = ({
         })
       })
     }), /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_antd_.Row, {
-      children: [/*#__PURE__*/jsx_runtime_.jsx(external_antd_.Col, {
+      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)(external_antd_.Col, {
         xs: 24,
-        md: 6
+        md: 6,
+        children: [/*#__PURE__*/jsx_runtime_.jsx(external_antd_.Card, {
+          actions: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+            children: ["\uC9F9\uC9F9", /*#__PURE__*/jsx_runtime_.jsx("br", {}), dummy.Post.length]
+          }, "twit"), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+            children: ["\uD314\uB85C\uC789", /*#__PURE__*/jsx_runtime_.jsx("br", {}), dummy.Followings.length]
+          }, "following"), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+            children: ["\uD314\uB85C\uC6CC", /*#__PURE__*/jsx_runtime_.jsx("br", {}), dummy.Followers.length]
+          }, "follower")],
+          children: /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Card.Meta, {
+            avatar: /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Avatar, {
+              children: dummy.nickname[0]
+            }),
+            title: dummy.nickname
+          })
+        }), /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+          href: "/signup",
+          children: /*#__PURE__*/jsx_runtime_.jsx("a", {
+            children: /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Button, {
+              children: "\uD68C\uC6D0\uAC00\uC785"
+            })
+          })
+        })]
       }), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Col, {
         xs: 24,
         md: 12,
