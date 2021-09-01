@@ -23,7 +23,7 @@ const AppLayout = ({children}) => {
                 </Menu.Item>
             </Menu>
             <Button><Link href="/signup"><a>회원가입</a></Link></Button>
-            <Row>
+            <Row gutter={10}>
                 <Col xs={24} md={6}>
                     {dummy.isLoggedIn ? <Card
                         actions={[

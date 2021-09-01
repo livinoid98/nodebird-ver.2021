@@ -45,6 +45,9 @@ const LoginForm = () => {
   });
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_antd_.Form, {
     onSubmit: onSubmitForm,
+    style: {
+      padding: 10
+    },
     children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
       children: [/*#__PURE__*/jsx_runtime_.jsx("label", {
         htmlFor: "user-id",
@@ -136,6 +139,7 @@ const AppLayout = ({
         })
       })
     }), /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_antd_.Row, {
+      gutter: 10,
       children: [/*#__PURE__*/jsx_runtime_.jsx(external_antd_.Col, {
         xs: 24,
         md: 6,

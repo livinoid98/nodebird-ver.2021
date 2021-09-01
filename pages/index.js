@@ -1,16 +1,24 @@
 import React from 'react'
-import { Form, Input, Button, Icon, Card, Avatar } from 'antd';
+import { Form, Input, Button, Card, Avatar } from 'antd';
+import {RetweetOutlined, HeartOutlined, MessageOutlined, EllipsisOutlined} from '@ant-design/icons'
 
 const dummy = {
     isLoggedIn: true,
     imagePaths: [],
-    mainPosts: [],
+    mainPosts: [{
+        User: {
+            id: 1,
+            nickname: 'livinoid98',
+        },
+        content: '첫 번째 게시글',
+        img: 'https://cdn.pixabay.com/photo/2018/04/28/22/03/tree-3358468_960_720.jpg'
+    }],
 }
 
 const Home = () => {
     return (
         <>
-            {dummy.isLoggedIn && <Form encType="multipart/form-data">
+            {dummy.isLoggedIn && <Form style={{marginBottom: 20}} encType="multipart/form-data">
                 <Input.TextArea maxLength={140} placeholder="어떤 신기한 일이 있었나요?"></Input.TextArea>
                 <div>
                     <input type="file" multiple hidden />
@@ -34,10 +42,10 @@ const Home = () => {
                 return(
                     <Card key={+c.createdAt} cover={c.img && <img alt="example" src={c.img} />}
                     actions={[
-                        <Icon type="retweet" key="retweet"/>,
-                        <Icon type="heart" key="heart"/>,
-                        <Icon type="message" key="message"/>,
-                        <Icon type="ellipsis" key="ellipsis"/>
+                        <RetweetOutlined key="retweet"/>,
+                        <HeartOutlined key="heart"/>,
+                        <MessageOutlined key="message"/>,
+                        <EllipsisOutlined key="ellipse"/>
                     ]}
                     extra={<Button>팔로우</Button>}>
                         <Card.Meta avatar={<Avatar>{c.User.nickname[0]}</Avatar>}
