@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
-import {Menu, Input, Button, Row, Col, Card, Avatar } from 'antd'
+import {Menu, Input, Button, Row, Col } from 'antd'
 import LoginForm from './LoginForm'
 import UserProfile from './UserProfile'
 
@@ -33,7 +33,9 @@ const AppLayout = ({children}) => {
                 <Col xs={24} md={12}>
                     {children}
                 </Col>
-                <Col xs={24} md={6}></Col>
+                <Col xs={24} md={6}>
+                    <Link href="http://livinoid98.dothome.co.kr/starbucks/"><a target="_blank">Made by livinoid98</a></Link>
+                </Col>
             </Row>
         </div>
     )

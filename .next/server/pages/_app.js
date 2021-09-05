@@ -187,7 +187,14 @@ const AppLayout = ({
         children: children
       }), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Col, {
         xs: 24,
-        md: 6
+        md: 6,
+        children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+          href: "http://livinoid98.dothome.co.kr/starbucks/",
+          children: /*#__PURE__*/jsx_runtime_.jsx("a", {
+            target: "_blank",
+            children: "Made by livinoid98"
+          })
+        })
       })]
     })]
   });
