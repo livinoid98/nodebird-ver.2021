@@ -4,7 +4,7 @@ exports.id = 888;
 exports.ids = [888,616];
 exports.modules = {
 
-/***/ 16:
+/***/ 511:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -88,6 +88,42 @@ const LoginForm = () => {
 };
 
 /* harmony default export */ const components_LoginForm = (LoginForm);
+;// CONCATENATED MODULE: ./components/UserProfile.js
+
+
+
+
+const dummy = {
+  nickname: 'livinoid98',
+  Post: [],
+  Followings: [],
+  Followers: [],
+  isLoggedIn: false
+};
+
+const UserProfile = () => {
+  return /*#__PURE__*/jsx_runtime_.jsx("div", {
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_antd_.Card, {
+      actions: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        children: ["\uC9F9\uC9F9", /*#__PURE__*/jsx_runtime_.jsx("br", {}), dummy.Post.length]
+      }, "twit"), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        children: ["\uD314\uB85C\uC789", /*#__PURE__*/jsx_runtime_.jsx("br", {}), dummy.Followings.length]
+      }, "following"), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        children: ["\uD314\uB85C\uC6CC", /*#__PURE__*/jsx_runtime_.jsx("br", {}), dummy.Followers.length]
+      }, "follower")],
+      children: [/*#__PURE__*/jsx_runtime_.jsx(external_antd_.Card.Meta, {
+        avatar: /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Avatar, {
+          children: dummy.nickname[0]
+        }),
+        title: dummy.nickname
+      }), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Button, {
+        children: "\uB85C\uADF8\uC544\uC6C3"
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const components_UserProfile = (UserProfile);
 ;// CONCATENATED MODULE: ./components/AppLayout.js
 
 
@@ -95,7 +131,8 @@ const LoginForm = () => {
 
 
 
-const dummy = {
+
+const AppLayout_dummy = {
   nickname: 'livinoid98',
   Post: [],
   Followings: [],
@@ -143,21 +180,7 @@ const AppLayout = ({
       children: [/*#__PURE__*/jsx_runtime_.jsx(external_antd_.Col, {
         xs: 24,
         md: 6,
-        children: dummy.isLoggedIn ? /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Card, {
-          actions: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-            children: ["\uC9F9\uC9F9", /*#__PURE__*/jsx_runtime_.jsx("br", {}), dummy.Post.length]
-          }, "twit"), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-            children: ["\uD314\uB85C\uC789", /*#__PURE__*/jsx_runtime_.jsx("br", {}), dummy.Followings.length]
-          }, "following"), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-            children: ["\uD314\uB85C\uC6CC", /*#__PURE__*/jsx_runtime_.jsx("br", {}), dummy.Followers.length]
-          }, "follower")],
-          children: /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Card.Meta, {
-            avatar: /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Avatar, {
-              children: dummy.nickname[0]
-            }),
-            title: dummy.nickname
-          })
-        }) : /*#__PURE__*/jsx_runtime_.jsx(components_LoginForm, {})
+        children: AppLayout_dummy.isLoggedIn ? /*#__PURE__*/jsx_runtime_.jsx(components_UserProfile, {}) : /*#__PURE__*/jsx_runtime_.jsx(components_LoginForm, {})
       }), /*#__PURE__*/jsx_runtime_.jsx(external_antd_.Col, {
         xs: 24,
         md: 12,
@@ -326,7 +349,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [664,908], () => (__webpack_exec__(16)));
+var __webpack_exports__ = __webpack_require__.X(0, [664,908], () => (__webpack_exec__(511)));
 module.exports = __webpack_exports__;
 
 })();
