@@ -339,9 +339,10 @@ const NodeBird = ({
 };
 
 /* harmony default export */ const _app = (external_next_redux_wrapper_default()((initialState, options) => {
-  const store = (0,external_redux_namespaceObject.createStore)(reducers, initialState); // store customizing
-
-  console.log(store.getState());
+  const middlewares = [];
+  const enhancer = (0,external_redux_namespaceObject.compose)((0,external_redux_namespaceObject.applyMiddleware)(...middlewares),  false ? 0 : f => f);
+  const store = (0,external_redux_namespaceObject.createStore)(reducers, initialState, enhancer);
+  return store;
 })(NodeBird));
 
 /***/ }),
