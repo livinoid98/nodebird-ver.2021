@@ -1,5 +1,5 @@
 import React from 'react'
-import {Form, Input, Button, List, Card} from 'antd'
+import {Button, List, Card} from 'antd'
 import {StopOutlined} from '@ant-design/icons'
 
 const Profile = () => {

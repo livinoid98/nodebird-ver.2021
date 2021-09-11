@@ -1,31 +1,32 @@
 {
-  "name": "nodebird",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "antd": "^4.16.12",
-    "next": "^11.1.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-redux": "^7.2.5",
-    "redux": "^4.1.1"
-  },
-  "devDependencies": {
-    "@ant-design/icons": "^4.6.4",
-    "eslint": "^7.32.0",
-    "eslint-plugin-import": "^2.24.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "nodemon": "^2.0.12",
-    "webpack": "^4.43.0"
-  },
-  "scripts": {
-    "dev": "nodemon",
-    "build": "next build",
-    "start": "next start"
-  },
-  "author": "livinoid98",
-  "license": "MIT"
+    "name": "nodebird",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "antd": "^4.16.12",
+        "next": "^11.1.0",
+        "next-redux-wrapper": "^6.0.2",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.5",
+        "redux": "^4.1.1"
+    },
+    "devDependencies": {
+        "@ant-design/icons": "^4.6.4",
+        "eslint": "^7.32.0",
+        "eslint-plugin-import": "^2.24.1",
+        "eslint-plugin-react": "^7.24.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "nodemon": "^2.0.12",
+        "webpack": "^4.43.0"
+    },
+    "scripts": {
+        "dev": "nodemon",
+        "build": "next build",
+        "start": "next start"
+    },
+    "author": "livinoid98",
+    "license": "MIT"
 }
